@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "9901973ece8dde9b",
+    "type": "split",
+    "children": [
+      {
+        "id": "29b15f6b8257b35a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "part1/part1.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "386b9ec729921973",
+    "type": "split",
+    "children": [
+      {
+        "id": "cc8e2f4479b17b24",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c49860531b83f812",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "ce65c730b566aa46",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 432.0036334991455
+  },
+  "right": {
+    "id": "1692a95b154d88dc",
+    "type": "split",
+    "children": [
+      {
+        "id": "57dc559ff83797b6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0feaff9493028592",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "part1/part1.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "29b15f6b8257b35a",
+  "lastOpenFiles": [
+    "part1/part1.md",
+    "part1/lebesgue&hausdorf_equality/equality_on_lebesgue_measurable_symetric_sets.md",
+    "index.md",
+    "introduction.md",
+    "links.md",
+    "part1/lebesgue&hausdorf_equality/equality.md",
+    "part1/lebesgue&hausdorf_equality/equality_on_cubes_throws_measures_equality.md",
+    "part3/submanifold_lebesgue&hausdorf_equality.md",
+    "literature.md",
+    "part3/continuous_func_properties/image_measurability.md"
+  ]
+}

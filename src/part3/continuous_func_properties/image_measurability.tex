@@ -1,0 +1,21 @@
+\begin{tw}
+	$\Omega \in top(\mathbb{R}^n)$, $f: \Omega \rightarrow \mathbb{R}^m$ klasy $C^1$, $1 \leq n \leq m$, $f'(x)$ jest monomorfizmem dla $x \in \Omega$. Wtedy:
+	\begin{enumerate}	
+		\item $(A \subset \Omega, A \in L_n) \; \Longrightarrow \; f(A) \in H_n$ 
+		\item $(B \subset \mathbb{R}^m, B \in H_n) \Longrightarrow f^{-1}(B) \in L_n$ 
+	\end{enumerate}
+
+	\textbf{Dowód 1.:}\newline
+		Dla początku musimy pokazać to, że obraz zbioru $A$ miary zero jest miary zero. Wiemy, że dla każdego zbioru $A \subset \mathbb{R}^n$ zachodzi nierówność $\mathcal{H}^p(f(A)) \leq (Lip(f))^p \mathcal{H}^p(A)$, gdize $p \in [0, +\infty)$. Ponieważ $A$ jest mairy zero to dostajemy, że $f(A)$ musi być miary zero. 
+		Teraz pokażemy, że 1. zahcodzi dla zbiorów typu $F_{\sigma}$ , to znaczy zbiory które są przeliczlną sumą zbiorów domkniętych. Niech $A = \bigcup_{j \in \mathbb{N}} K_j$, gdzie $K_j$ to są zbiory domknięte. Ponieważ $f(A) = f(\bigcup_{j \in \mathbb{N}} K_j) = \bigcup_{j \in \mathbb{N}} f(K_j)$ to wystarczy pokazać, że każdy $f(K_j)$ jest mierzalny. Możemy założyć, że $K_j$ jest zwarty. Ale wtedy obraz musi być zwarty, a więc domknięty, skąd wynika, że $f(A)$ jest typu $F_{\sigma}$ w $\mathbb{R}^m$, a więc borelowski, a więc mierzalny w sensie $\mathcal{H}^n$. 
+		Teraz wystarczy skorzystać z tego, że każdy $A \in L_n$ można przedstawić jako $C \backslash Z$, gdzie $C$ jest typu $F_{\sigma}$ oraz $Z$ jest miary zero, co kończy dowód.
+	\newline
+	\textbf{Dowód 2.:}\newline
+		Będziemy stosować lemat 3.1.2 o tym, że możemy znalieźć ciąg par $\{(B_v, T_v)\}_{v \in \mathbb{N}}$, takich, że $B_v$ pokrywają $\Omega$, oraz $T_v$ robią odpowiednie ograniczenia dla $f$ na $B_v$. Zauważmy, że możemy dobrać taki ciąg $B_v$, że $\mathcal{H}^n(B_v) < + \infty$ . Mamy $$ 
+			f^{-1}(B) = \bigcup_{v=0}^{\infty} (f|_{B_v})^{-1} (B \cap f(B_v))
+		$$
+		Ponieważ $B \cap f(B_v)$ ma miarę $\mathcal{H}^n$ skończoną to $B \cap f(B_v) = C_v \cup Z_v$, gdzie $C_v$ jest borelowski oraz $Z_v$ jest mary $\mathcal{H}^m$ zero. Wtedy $$ 
+			(f|_{B_v})^{-1}(B \cap f(B_v)) = (f|_{B_v})^{-1}(C_v) \cap (f|_{B_v})^{-1}(Z_v)
+		$$
+		Korzystając z tego, że $f$ jest bilipszitzowska na $B_v$ dostajemy, że $(f|_{B_v})^{-1}(C_v)$ jest borelowska (bo przeciobraz zbioru borolewskiego przez funckju ciągłu) oraz $(f|_{B_v})^{-1}(Z_v)$ ma miarę $\mathcal{H}^n$ zerową, gdzyć $(f|_{B_v})^{-1}$ jest lipszitzowska. Zatem z tego, że $\mathcal{H}^n = \mathcal{L}^n$ na $\mathbb{R}^n$ wynika, że $(f|_{B_v})^{-1}(B \cap f(B_v))$ są $L_n$ mierzalne dla $v \in \mathbb{N}$, a więc $f^{-1}(B) \in L_n$ co kończy dowód. 
+\end{tw}

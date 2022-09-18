@@ -1,0 +1,67 @@
+\usepackage{tikz-cd}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{microtype}
+\DisableLigatures{encoding = *, family = * }
+\usepackage{fancyhdr}
+\usepackage{amssymb}
+\usepackage{url,hyperref}
+\usepackage{multirow,multicol}
+\usepackage[singlelinecheck=false]{caption}
+\usepackage{booktabs,float,tabularx,ltablex}
+\usepackage[flushleft]{threeparttable}
+\usepackage{enumitem}
+\usepackage{pstricks,graphicx}
+\usepackage{amsmath}
+\usepackage[nottoc]{tocbibind}
+\usepackage{natbib}
+\bibliographystyle{alpha}%--- Styl bibliograficzny APA 6th
+\usepackage{lipsum}
+\usepackage{chngcntr}
+\counterwithout{table}{chapter}
+\counterwithout{figure}{chapter}
+\usepackage{titlesec}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.14}
+\floatstyle{plaintop}
+\newfloat{wykres}{tbph}{loc}
+\floatname{wykres}{Wykres}
+\usepackage{cleveref}
+\crefname{wykres}{wykres}{wykres}
+\Crefname{wykres}{wykres}{Wykres}
+\newcommand\listofcharts{\listof{wykres}{Spis wykresów}}
+\usepackage{geometry}
+\newgeometry{tmargin=2.5cm, bmargin=2.5cm, headheight=16pt, inner=3.5cm, outer=2cm} 
+\usepackage{pdflscape}
+\usepackage{rotating}
+\usepackage{theorem}
+\theoremstyle{break}
+\theorembodyfont{\it}
+\newtheorem{hip}{Hipoteza}[section]
+\theorembodyfont{\rm}
+\newtheorem{defi}{Definicja}[section]
+\newtheorem{tw}{Twierdzenie}[section]
+\newtheorem{lem}{Lemat}[section]
+
+
+
+\pagestyle{fancy}
+\fancyhead[C]{} 
+\fancyfoot[R]{\thepage}
+\fancyhead[L]{\scriptsize\leftmark}
+\fancyhead[R]{\scriptsize\rightmark}
+\cfoot[]{}
+\fancypagestyle{plain}{%
+\fancyhf{} % clear all header and footer fields
+\fancyfoot[R]{\textbf{\thepage}} % except the center
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}}
+\setcounter{secnumdepth}{4}
+
+\renewcommand{\chaptermark}[1]{%
+\markboth{\MakeUppercase{%
+\chaptername}\ \thechapter.%
+\ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}

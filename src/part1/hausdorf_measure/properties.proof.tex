@@ -1,0 +1,10 @@
+
+1., 2., 3. wynikają z twierdzenia i własności konstrukcji Caratheodery'ego. 5. wynika z 2.+4. Pozostaje wykazać 4.
+Jeśli $\mathcal{H}^p(Y) = +\infty$, to $G=X$ spełnia warunki. Jeśli $\mathcal{H}^p(Y) < +\infty$ i $p=0$, to $G=Y$ spełnia warunki, gdzyż $Y$ musi być wtedy skończony więc jest type $G_{\delta}$.
+Pozostaje przypadek gdy $\mathcal{H}^p(Y) < \infty$ oraz $p > 0$.\newline
+
+Dla początku zauważmy jedną  własność $h^p$
+Jeśli $\forall H \subset X, diam(H) < \infty, \epsilon > 0, \delta> 0 \exists U \in top(X): diam(U) \leq diam(H) + \delta \wedge h^p(U) \leq h^p(H) + \epsilon$ 
+Rozpoatrzymy zbiory postaci $U_r = \bigcup_{x \in H} K(x, \frac{r}{2})$, gdIe $0 < r \leq \delta$. Zawsze mamy $diam(U_r) \leq diam(H) + \delta$, a ponadto dla dostatecznie małych $r>0$ zajdzie nierówność $2^{-p} \alpha(p) (diam(H) + r)^p \leq 2^{-p} \alpha(p)(diam(H))^p + \epsilon$ \newline
+
+Dysponując tą włanością rozpatrzymy $Y \subset X$ taki, że $\mathcal{H}^p(Y) < \infty$. Weżmy $\delta > 0$ a wtedy znajdziemy ciąg zbiorów $\{Y_i\}_{i \in \mathbb{N}}$ taki, że $diam(Y_i) < \delta$ oraz $\sum_{i \in \mathbb{N}} h^p(Y_i) \leq \mathcal{H}^p_{\delta}(Y) + \delta/2$  . Następnie korzystając z tej w pokazanej własności $h^p$ dla $i \in \mathbb{N}$ znajdziemy zbiory $U_i$ otwarte w $X$, takie że $diam(U_i) \leq 2 \delta$ oraz $h^p(U_i) \leq h^p(Y_i) + \delta/ 2^{2+i}$. Wtedy zbiór $G_{\delta} = \bigcup_{i \in \mathbb{N}}U_i$ spełnia równość $\mathcal{H}_{2\delta}^p(G_{\delta}) \leq \sum_{i \in \mathbb{N}} h^p(y_i) + \delta/2 \leq \mathcal{H}^p_{\delta}(Y) + \delta \leq \mathcal{H}(Y) + \delta$ .  Biorąc ciągi  $\delta_n = 2^{-n}$ dla $n \in \mathbb{N}$ łatwo zauwżyć, że zbiór $G = \bigcap_{n \in \mathbb{N}} G_{\delta_n}$ spełnia warunki tezy 

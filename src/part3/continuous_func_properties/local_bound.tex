@@ -1,0 +1,62 @@
+\begin{lem}
+	Niech $\Omega \in top(\mathbb{R}^n)$ , $f: \Omega \rightarrow \mathbb{R}^m$ jest klasy $C^1$ , $1 \leq n \leq m$, $a \in \Omega$ oraz $T:= f'(a)$ monomorfizm . Wtedy dla $\lambda>1$ istnieje takie $r>0$, że:
+	\begin{enumerate}
+		\item $K:=B(a,r) \subset \Omega$ 
+		\item $\forall h \in \mathbb{R}^m, x \in K: \; \lambda^{-1}|T(h)| \leq |f'(x)(h)| \leq \lambda|T(h)|$ 
+		\item $\forall x_1, x_2 \in K: \; \lambda^{-1}|T(x_1) - T(x_2)| \leq |f(x_1) - f(x_2)| \leq \lambda|T(x_1) - T(x_2)|$ 
+		\item $f|_K$ jest bilipszitzowska
+	\end{enumerate}
+
+	\textbf{Dowód:}\newline
+	Wybieramy $\epsilon > 0$, tak aby $$
+		\epsilon (\frac{1}{\lambda-1} + \frac{1}{1 - \lambda^{-1}}) \leq inf\{|f'(a)(h)|: |h|=1\} = \|f'(a)\|
+	$$
+	Wtedy mamy: 
+	\begin{equation}
+		\begin{cases}
+		\epsilon |h| \leq (\lambda-1) |f'(a)(h)| & , h \in \mathbb{R}^m \\
+		\epsilon |h| \leq (1 - \lambda^{-1}) |f'(a)(h)| & , h \in \mathbb{R}^m
+		\end{cases}
+	\end{equation}
+
+	Wybieramy następnie $r>0$ tak aby:
+	\begin{enumerate}
+		\item[(a)] $K = B(a,r) \subset \Omega$ 
+		\item[(b)] $\forall x \in K: \; \| f'(x) - f'(a) \| \leq \epsilon$
+	\end{enumerate}
+	Sprawdzamy 2.: 
+	$$ 
+		|f'(x)(h) - f'(a)(h)| \leq \epsilon|h| \quad \Longrightarrow \quad
+		||f'(x)(h)| - |f'(a)(h)|| \leq \epsilon|h| 
+	$$
+	$$
+		\quad \Longrightarrow \quad
+		-\epsilon|h| \leq |f'(x)(h)| - |f'(a)(h)| \leq \epsilon|h| \quad \Longrightarrow \quad
+	$$
+	$$
+		|f'(a)(h)| - \epsilon|h| \leq |f'(x)(h)| \leq |f'(a)(h)| + \epsilon|h|
+	$$
+	Korzystając z tego jake dobieraliśmy $\epsilon$ dostajemy: $$
+		\lambda^{-1}|T(h)| = \lambda^{-1}|f'(a)(h)| \leq |f'(x)(h)| \leq \lambda|f'(a)(h)| = \lambda|T(h)|
+	$$
+	Dla sprawdzenia 3. rozpatrzymy następujące dwzorowanie: $$
+		F: K \ni x \rightarrow f(x) - f'(a)(x) \in \mathbb{R}^m
+	$$
+	Mamy $F'(x) = f'(x) - f'(a)$. Zatem $\forall x_1, x_2 \in K: \; |F(x_1) - F(x_2)| \leq \epsilon |x_1 - x_2|$ skąd dalej dostajemy: $$
+		|(f(x_1) - f'(a)(x_1)) - (f(x_2) - f'(a)(x_2))| \leq \epsilon|x_1 - x_2|
+	$$
+	$$
+		|(f(x_1) - f(x_2)) - f'(a)(x_1-x_2))| \leq \epsilon|x_1 - x_2|
+	$$
+	$$
+		||f(x_1) - f(x_2)| - |f'(a)(x_1-x_2))|| \leq \epsilon|x_1 - x_2|
+	$$
+	$$
+		|f'(a)(x_1-x_2))| - \epsilon|x_1 - x_2| \leq |f(x_1) - f(x_2)| \leq |f'(a)(x_1-x_2))| + \epsilon|x_1 - x_2|
+	$$
+	Ponownie korzystając z tego jakie dobieraliśmy $\epsilon$ i podstawiając $h = x_1 - x_2$ dostajemy: $$
+		\lambda^{-1}|T(x_1) - T(x_2)| \leq |f(x_1) - f(x_2)| \leq \lambda | T(x_1) - T(x_2)|
+	$$
+	Co kończy dowód 3. z którego natychmiast wynika 4.
+
+\end{lem}

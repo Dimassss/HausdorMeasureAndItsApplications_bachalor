@@ -1,0 +1,20 @@
+Lemat 3.2.2
+$\Omega \in top(\mathbb{R}^n)$, $f: \Omega \rightarrow \mathbb{R}^m$ klasy $C^1$. $1 \leq n \leq m$, $A \subset \Omega$, $\forall x \in A: J_nf(x) = 0$ . Wtedy $\mathcal{H}^n(f(A))=0$
+
+Dowód:
+Tezę wystarczy pokazać dla $A:=\{x \in \Omega: J_nf(x)=0\}$. $A$ jest $\sigma$-zwarta, więc dalej możemy ograniczyć dowód do zbiorów $A$ zwartego. Przy ustalionym $A$ i $\epsilon > 0$ rozważmy odwzorowanie $$
+	g_{\epsilon}: \Omega \ni x \rightarrow (\epsilon x, f(x)) \in \mathbb{R}^n \times \mathbb{R}^m
+$$
+oraz rzutowanie $p: \mathbb{R}^n \times \mathbb{R}^m \rightarrow \mathbb{R}^m$ dla którego $Lip(p) = 1$. Mamy $f(A) = p(g_{\epsilon}(A))$. $g_{\epsilon}$ jest injekcją oraz $\forall x \in \Omega: g_{\epsilon}'(x)$ - monomorfizm, więc  dostajemy nierówność: $$
+	\mathcal{H}^n(f(A)) \leq \mathcal{H}^n(g_{\epsilon}(A)) = \int_{A} J_ng_{\epsilon} d \mathcal{L}^n
+$$ Macierz $g_{\epsilon}$ ma taką postać: $$
+	\begin{bmatrix}
+		\epsilon & \cdots & 0 \\
+		\vdots & \ddots & \vdots \\
+		0 & \cdots & \epsilon \\
+		 & & \\
+		 & f'(x) & \\
+		 & &
+	\end{bmatrix}
+$$
+Teraz zauważmy, że $(J_ng_{\epsilon})^2(x) = \epsilon^{2n} + \epsilon^{2n-1}s_1(x) + \cdots + \epsilon^2s_{2n-2}(x)$, gdzie $s_1, ..., s_{2n-2}$ są ciągłe , więc ograniczone na $A$. Istnieje więc stała $M>0$, że $J_ng_{\epsilon}(x)\leq M\epsilon$ dla $x \in A$, $\epsilon \in (0,1)$. Skąd dostajemy $\mathcal{H}^n(f(A)) \leq \int_{A} J_ng_{\epsilon} d \mathcal{L}^n \leq \epsilon M \mathcal{L}^n(A)$ dla $\epsilon \in (0,1)$ skąd wynika już żądana równość $\mathcal{H}^n(f(A)) = 0$ 

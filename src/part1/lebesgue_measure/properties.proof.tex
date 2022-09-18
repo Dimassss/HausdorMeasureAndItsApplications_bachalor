@@ -1,0 +1,8 @@
+
+    1., 2. 3. oraz 4. są oczywiste \newline
+    5. Istnieje $N \in \mathbb{N}, Y \subset [-N, N]^m$ więc $\mathcal{L}^m(Y) \leq (2N)^m$\newline
+    6. $A \in L_m$ ; $A = \bigcup_{n \in \mathbb{N}} A \cup [-n,n]$ i każdy zbiór w tej sumie ma miarę skończoną\newline
+    7. Jeśli $Y \subset \mathbb{R}^m$ i $\mathcal{L}^m(Y) = +\infty$ to bierzemy $G = \mathbb{R}^m$. Niech teraz $\mathcal{L}^m(Y) < \infty$. Dobieramy ciąg pokryć Y kostkami $\{I_i^{(n)}\}_{n \in \mathbb{N}}$ taki, że $Y \subset \bigcup_{i \in \mathbb{N}} I_i^{(n)}, n \in \mathbb{N}$ tak aby $$ \sum_{i \in \mathbb{N}} vol(I_i^{(n)}) \leq \mathcal{L}^m(Y) + 2^{-n} $$ Określając $G_n' := \bigcup_{i \in \mathbb{N}} I^{(n)}_i \supset Y, n \in \mathbb{N}$ mamy $\mathcal{L}^m(Y) \leq \mathcal{L}^m(G_n') \leq \mathcal{L}^m(Y) + 2^{-n}, n \in \mathbb{N}$ . Biorąc $G_j := \bigcap_{n = 0}^j G_n'$ dla $j \in \mathbb{N}$. Dostajemy $\mathcal{L}^m(Y) \leq \mathcal{L}^m(G_n') \leq \mathcal{L}^m(Y) + 2^{-n}$ . Ciąg $\{G_n\}_{n \in \mathbb{N}}$ jest stępujący i jego zbiory mają miary skończone więc dla $G = \bigcap_{n \in \mathbb{N}} G_n$ mamy $Y \subset G$ i $\mathcal{L}^m(G) = \mathcal{Y}^m$\newline
+    8. Zbiory typu $G_{\delta}$ są mierzalne, więc regularność wynika z 7.\newline
+    9. Translację nie zmieniją objętości kostek więc równierz objętości zbiorów\newline
+    10. Jeśli $s>0$ to równość dostajemy obserwując, że dla kostek zwartych $vol(sI) = s^m vol(I)$ . Dla $s=0$ jest oczywiste, bo $m \leq 1$ oraz $sI = \{0\}$ ma miarę zero.  \newline
