@@ -2,7 +2,7 @@
 	Istnieje dokładnie jedna miara $\mathcal{L}^M: L_M \rightarrow [0, +\infty]$ taka, że dla dowolnej lokalnej parametryzacji $p: P \rightarrow U$ mamy: $$
 		\mathcal{L}^M(A \cap U) = \int_{p^{-1}(A)} J_dp d \mathcal{L}^d, \quad A \in L_M
 	$$
-	Ponadto miara ta jest zupełna, $\mathcal{B}$-regularna oraz istnieje ciąg $(\Omega_j)_{j=1}^{\infty}$ zbiorów otwartych i relatywnie zwartych w $M$, dla którego $M = \bigcup_{j=1}^{\infty} \Omega_j$ i $\mathcal{L}^M(\Omega_j) < \infty, j \in \mathbb{N}$ . Miara $\mathcal{L}^M$ nosi nazwę miary Lebesgue'a na $M$ 
+	Ponadto miara ta jest zupełna, $\mathcal{B}$-regularna oraz istnieje ciąg $(\Omega_j)_{j=1}^{\infty}$ zbiorów otwartych i relatywnie zwartych w $M$, dla którego $M = \bigcup_{j=1}^{\infty} \Omega_j$ i $\mathcal{L}^M(\Omega_j) < \infty, j \in \mathbb{N}$ . Miara $\mathcal{L}^M$ nosi nazwę miary Lebesgue'a na $M$.
 	\newline
 	\textbf{Dowód:}\newline
 	Ustaliamy przeliczalną rodzinę lokalnych parametryzacji $(p_j: P_j \rightarrow U_j)_{j \in \mathcal{N}}$ taką, że $\bigcap_{j=1}^{\infty} U_j = M$. NIech $B_1:= U_1, \; B_j := U_j \backslash (U_1 \cup \cdots \cup U_{j-1}), \; j \geq 2$. Oczywiście $B_j \in \mathcal{B}(M) \subset L_M, \; j \in \mathbb{N},\;$ oraz $\bigcup_{j=1}^{\infty} B_j = M$. Teraz dla zbiory $A \in L_M$ kładziemy: $$
@@ -30,5 +30,5 @@
 	NIech $\mu: L_M \rightarrow [0, +\infty]$ będzie inną miarą spełniającą tą równość. Wtedy dla $A \in L_M$ mamy: $$
 		\mu(A) = \sum_{j=1}^{\infty} \mu(A \cap B_j) = \sum_{j=1}^{\infty} \int_{p_j^{-1}(A \cap B_j)} J_dp_j d \mathcal{L}^d = \mathcal{L}^m(A)
 	$$
-	Stąd wynika, że $\mathcal{L}^M$ jest jedyna
+	Stąd wynika, że $\mathcal{L}^M$ jest jedyna.
 \end{tw}
