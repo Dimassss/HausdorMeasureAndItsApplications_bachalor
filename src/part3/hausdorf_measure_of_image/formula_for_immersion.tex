@@ -10,10 +10,15 @@
 	$$
 		\lambda^{-n}|T_v| \leq (J_nf)(x) \leq \lambda^n|T_v|
 	$$
-	która wynika bezpośrednio z następującej nierówności z lematu 3.1.2 
+	która wynika bezpośrednio z następującej nierówności z lematu 3.1.2
 	$$
 		\lambda^{-1}|T_v(h)| \leq |f'(x)(h)| \leq \lambda|T_v(h)| \quad\quad  \text{dla} \; x \in B_v, h \in \mathbb{R^n}, v \in \mathbb{N}
+	$$ 
+	oraz wniosku \citep[8.41]{Tworzewski} z Analizy Matematycznej 3, który mówi, że
 	$$
+		\forall v \in \mathbb{R}^n: |W_1(v)| \leq |W_2(v)| \quad \Longrightarrow \quad |W_1| \leq |W_2|
+	$$
+	gdzie $W_1$ i $W_2$ to są dowolne odwzorowania liniowe $\mathbb{R}^n \rightarrow \mathbb{R}^m$.
 	Definujemy $A_v := A \cap B_v$. Wtedy całkując otrzymaną nierówność na $A_v$ dostajemy $$
 		\lambda^{-n}|T_v|\mathcal{L}^n(A_v) \leq \int_{A_v}J_nf d \mathcal{L}^n \leq \lambda^n |T_v| \mathcal{L}^n(A_v)
 	$$
