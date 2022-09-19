@@ -1,1 +1,4 @@
-lemat 3.2.2: To jest twierdzenie Sardalemat 3.2.2: To jest twierdzenie Sarda
+lemat 3.2.2: To jest twierdzenie Sarda lemat 3.2.2: To jest twierdzenie Sarda
+
+
+
