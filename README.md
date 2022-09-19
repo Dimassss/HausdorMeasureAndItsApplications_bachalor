@@ -1,0 +1,1 @@
+Entrance point is `referat.tex`. So to get pdf file you have to compile `referat.tex` file
