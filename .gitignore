@@ -2,9 +2,10 @@
 notices/
 referat.aux
 referat.bbl
-referat.bib
 referat.blg
 referat.fls
 referat.log
 referat.out
 referat.toc
+referat.fdb_latexmk
+referat.synctex.gz
