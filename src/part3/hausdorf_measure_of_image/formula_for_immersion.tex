@@ -1,12 +1,12 @@
-\begin{lem}
-	$\Omega \in top(\mathbb{R}^n)$, $f: \Omega \rightarrow \mathbb{R}^m$ klasy $C^1$, $1 \leq n \leq m$ . $\forall x \in \Omega: f'(x)$ jest monormifizmem. NIech $L_n \ni A \subset \Omega$ taki, że $f|_A$ - injekcja. Wtedy:
+\begin{tw}
+	$\Omega \in top(\mathbb{R}^n)$, $f: \Omega \rightarrow \mathbb{R}^m$ klasy $C^1$, $1 \leq n \leq m$ . $\forall x \in \Omega: f'(x)$ jest monormifizmem. Niech $L_n \ni A \subset \Omega$ taki, że $f|_A$ - injekcja. Wtedy:
 	\begin{enumerate}	
 		\item $f(A) \in H_n$
 		\item $\mathcal{H}^n(f(A)) = \int_A J_nfd \mathcal{L}^n$ 
 	\end{enumerate}
-
+	
 	\textbf{Dowód:}\newline
-	Już wiemy, że $f(A) \in H_n$, więc musimy jedynie pokazać tą równość. Ustalmy $\lambda > 1$ i wybieramy rozbicie $\Omega$ oraz ciągi operatorów zgodnie z lematem 3.1.2 $\{(B_v, T_v)\}_{v \in \mathbb{N}}$ . Korzystając z własności normy w algebrze zewnętrznej oraz tego, że $J_nf = \|\bigwedge_nf\|$, dostajemy dla $x \in B_v$ oraz $v \in \mathbb{N}$ nierówność 
+	Już wiemy, że $f(A) \in H_n$, więc musimy jedynie pokazać tą równość. Ustalmy $\lambda > 1$ i wybieramy rozbicie $\Omega$ oraz ciągi operatorów zgodnie z lematem 3.1.2 $\{(B_v, T_v)\}_{v \in \mathbb{N}}$. Korzystając z własności normy w algebrze zewnętrznej oraz tego, że $J_nf = \|\bigwedge_nf\|$, dostajemy dla $x \in B_v$ oraz $v \in \mathbb{N}$ nierówność 
 	$$
 		\lambda^{-n}|T_v| \leq (J_nf)(x) \leq \lambda^n|T_v|
 	$$
@@ -28,7 +28,7 @@
 	$$
 	% https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZABgBpiBdUkANwEMAbAVxiRABUB9GgCgEFuAShABfUuky58hFACZyVWoxZsAZvyGjxIDNjwEi82YvrNWiEAJpaJe6UQAsC6qZUWuvK8LG2pBlACMzkpmbAAW3KKKMFAA5vBEoKoAThAAtkhBIDgQSGQgDHQARjAMAAqS+jIFMKo4NiAp6Ujy2bmI+YUl5ZX2FslYsWH1LsrmHNwAPpzAViINTRmIWTlIAMyjoRYR1j6NqUutq4gbIW4TNNOz3PN7iy3Ux1mu46pXc1EiQA
 	\begin{tikzcd}
-		T_v(A_v) & h_v & f(A_v) \arrow[ll] \arrow[rr, "h_v"]                                               &  & T_v(A_v) \\
+		T_v(A_v) &    & f(A_v) \arrow[ll, "h_v"] \arrow[rr, "h_v"]                                               &  & T_v(A_v) \\
 				&     &                                                                                   &  &          \\
 				&     & A_v \arrow[lluu, "T_v|_{A_v}"'] \arrow[rruu, "T_v|_{A_v}"] \arrow[uu, "f|_{A_v}"] &  &         
 	\end{tikzcd}
@@ -51,4 +51,4 @@
 	Teraz widzimy, że jeśli $\mathcal{H}^n(f(A)) = +\infty$ to równość z tezy zachodzi. Jeśli $\mathcal{H}^n(f(A)) < +\infty$ to przechodząc z $\lambda > 1$ do $1$ dostajemy równość $$
 		\mathcal{H}^n{f(A)} = \int_A J_nf d\mathcal{L}^n
 	$$
-\end{lem}
+\end{tw}
