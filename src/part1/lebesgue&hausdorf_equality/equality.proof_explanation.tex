@@ -1,4 +1,27 @@
-{\color{red}
-Tu musi być krótki opis dowodu i na czym on polega z połowaniem na Federera, Tworzewskego i Jarnickiego.
-W tym skrótowym dowodzie powiedzieć coś o nierówności izodiametrycznej i twierdzeniu Vitallego.
-}
+Dowód tego twierdzenia polega na wykorzystywaniu nierówności izodiametrycznej \citep[2.10.3]{Federer} 
+i twierdzeniu Vitallego \citep[2.8.18]{Federer}.
+Spoczątku pokazujemy, że równość jakieś miary $\mu$ na $\mathbb{R}^n$ na kostkach symetrycznych do miary 
+Lebesgue'a implikuje, że $\mu$ jest miarą Lebesgue'a, co było zrobione w lemacie \citep[3.35]{Tworzewski}.
+Potem biorąc kostku i wykorzystując twierdzenie Vitallego, które mówi że możemy znalieźć takie pokrycie kulami domkniętymi
+rozłącznymi o średnice co najwyżej $\epsilon$ tej kostki, że miara Lebesgue'a ich różnicy będzie równa 0. 
+To pozwala na pokazanie nierówności w pierwszą stronę: 
+$$ 
+    \mathcal{H}^m_{\epsilon}(\bigcup_{n=0}^{\infty} B_n) 
+    \leq \sum_{n=1}^{\infty} \alpha(m)2^{-m}(diam(B_n))^m 
+    = \sum_{n=1}^{\infty} \mathcal{L}^m(B_n) 
+    = \mathcal{L}^m(C)
+    = 1
+$$
+gdzie $\{B_n\}_{n \in \mathbb{N}}$ to są te kule oraz $1$ na końcu, to jest objętość tej kostki $C$ (możemy założyć, że jest symetryczna). 
+Skąd mamy nierówność $\mathcal{H}^m(C) \leq 1$. Żeby pokazać nierówność w drugą stronę będziemy potrzebowali jedynie tylko
+nierówności izodiametrycznej, która mówi że 
+$$
+    \mathcal{L}^m(A) \leq \alpha(m)2^{-m}diam(A) \quad \quad , A \subset \mathbb{R}^m
+$$
+Oczywiście, biorąc dowolne pokrycie $\{Y_n\}_{n \in \mathbb{N}}$ kostki $C$ o średnice co najwyżej $\epsilon > 0$ wynika
+$$ 
+    1 
+    \leq \sum_{n=0}^{+\infty} \mathcal{L}^m(Y_n) 
+    \leq \sum_{n=0}^{+\infty} \alpha(m)2^{-n}(diam(Y_n))^m 
+$$ 
+Co z samej konstrukcji miary Hausdorffa daje nam żądaną nierówność $1 \leq \mathcal{H}^m(C)$.
