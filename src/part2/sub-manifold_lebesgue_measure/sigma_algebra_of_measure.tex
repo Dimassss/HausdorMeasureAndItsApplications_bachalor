@@ -11,7 +11,14 @@
 	\end{enumerate}
 	\textbf{Dowód:}
 	\begin{enumerate}
-		\item[(a)] Niech $p: P \rightarrow U$ będzie dowolną parametryzacją i niech $\phi_i: p^{-1} \circ p_i: p^{-1}_i(U \cap U_i) \rightarrow p^{-1}(U \cap U_i)$, dla $i \in I$  . Wtedy $p^{-1}(A) = p^{-1}(A \cap \bigcup_{i\in I} U_i) = \bigcup_{i \in I} p^{-1}_i(A \cap U_i) = \bigcup_{i \in I} \phi_i(p_i^{-1}(A) \cap p_i^{-1}(U)) \in L_d$ 
+		\item[(a)] Niech $p: P \rightarrow U$ będzie dowolną parametryzacją i niech 
+		$$
+			\phi_i: p^{-1} \circ p_i: p^{-1}_i(U \cap U_i) \rightarrow p^{-1}(U \cap U_i) \quad , i \in I
+		$$
+		Wtedy 
+		$$
+			p^{-1}(A) = p^{-1}(A \cap \bigcup_{i\in I} U_i) = \bigcup_{i \in I} p^{-1}_i(A \cap U_i) = \bigcup_{i \in I} \phi_i(p_i^{-1}(A) \cap p_i^{-1}(U)) \in L_d
+		$$ 
 		\item[(b)]
 			\begin{enumerate} 
 				\item[(i)] $\Longrightarrow$ (ii): $(f \circ p)^{-1}(\Omega) = p^{-1}(f^{-1}(\Omega))$ 
