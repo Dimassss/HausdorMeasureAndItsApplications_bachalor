@@ -1,12 +1,12 @@
 \begin{tw}
 	Niech $(p_i: P_i \rightarrow U_i)_{i \in I}$ będzie dowolnym, co najwyżej przeliczalnym, układem lokalnych parametryzacji takim, że $\cup_{i \in I} U_i = M$. Wtedy:
 	\begin{enumerate}
-		\item[(a)] Dla $A \subset M$ mamy: $A \in L_M \Leftrightarrow \forall i \in I: p_i^{-1}(A) \in L_d$ .
+		\item[(a)] Dla $A \subset M$ mamy: $A \in L_M \Leftrightarrow \forall i \in I: p_i^{-1}(A) \in L_n$ .
 		\item[(b)] Dla $f: M \rightarrow Y$. gdzie $Y$ jest przestrzenią topologiczną, następujące warunki są równoważne:
 			\begin{enumerate}
 				\item[(i)] $f \in \mathcal{M}(M, Y, L_M)$,
-				\item[(ii)] $f \circ p \in \mathcal{M}(P, Y, L_d)$ dla dowolnej parametryzacji $p: P \rightarrow U$,
-				\item[(iii)] $\forall i \in I: f \circ p \in \mathcal{M}(P_i, Y, L_d)$.
+				\item[(ii)] $f \circ p \in \mathcal{M}(P, Y, L_n)$ dla dowolnej parametryzacji $p: P \rightarrow U$,
+				\item[(iii)] $\forall i \in I: f \circ p \in \mathcal{M}(P_i, Y, L_n)$.
 			\end{enumerate}
 	\end{enumerate}
 	\textbf{Dowód:}
@@ -17,7 +17,7 @@
 		$$
 		Wtedy 
 		$$
-			p^{-1}(A) = p^{-1}(A \cap \bigcup_{i\in I} U_i) = \bigcup_{i \in I} p^{-1}_i(A \cap U_i) = \bigcup_{i \in I} \phi_i(p_i^{-1}(A) \cap p_i^{-1}(U)) \in L_d
+			p^{-1}(A) = p^{-1}(A \cap \bigcup_{i\in I} U_i) = \bigcup_{i \in I} p^{-1}_i(A \cap U_i) = \bigcup_{i \in I} \phi_i(p_i^{-1}(A) \cap p_i^{-1}(U)) \in L_n
 		$$ 
 		\item[(b)]
 			\begin{enumerate} 

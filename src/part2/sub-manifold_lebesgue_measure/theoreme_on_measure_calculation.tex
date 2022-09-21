@@ -1,34 +1,34 @@
 \begin{tw}[Miara Lebesgue'a na podrozmaitościach]
 	Istnieje dokładnie jedna miara $\mathcal{L}^M: L_M \rightarrow [0, +\infty]$ taka, że dla dowolnej lokalnej parametryzacji $p: P \rightarrow U$ mamy: $$
-		\mathcal{L}^M(A \cap U) = \int_{p^{-1}(A)} J_dp \, d \mathcal{L}^d, \quad A \in L_M
+		\mathcal{L}^M(A \cap U) = \int_{p^{-1}(A)} J_np \, d \mathcal{L}^n, \quad A \in L_M
 	$$
 	Ponadto miara ta jest zupełna, $\mathcal{B}$-regularna oraz istnieje ciąg $(\Omega_j)_{j=1}^{\infty}$ zbiorów otwartych i relatywnie zwartych w $M$, dla którego $M = \bigcup_{j=1}^{\infty} \Omega_j$ i $\mathcal{L}^M(\Omega_j) < \infty, j \in \mathbb{N}$ . Miara $\mathcal{L}^M$ nosi nazwę miary Lebesgue'a na $M$.
 	\newline
 	\textbf{Dowód:}\newline
-	Ustaliamy przeliczalną rodzinę lokalnych parametryzacji $(p_j: P_j \rightarrow U_j)_{j \in \mathcal{N}}$ taką, że $\bigcap_{j=1}^{\infty} U_j = M$. NIech $B_1:= U_1, \; B_j := U_j \backslash (U_1 \cup \cdots \cup U_{j-1}), \; j \geq 2$. Oczywiście $B_j \in \mathcal{B}(M) \subset L_M, \; j \in \mathbb{N},\;$ oraz $\bigcup_{j=1}^{\infty} B_j = M$. Teraz dla zbiory $A \in L_M$ kładziemy: $$
-		\mathcal{L}^M(A) := \sum_{j=1}^{\infty} \int_{p_j^{-1}(A \cap B_j)} J_dp_j \, d\mathcal{L}^d
+	Ustaliamy przeliczalną rodzinę lokalnych parametryzacji $(p_j: P_j \rightarrow U_j)_{j \in \mathbb{N}}$ taką, że $\bigcap_{j=1}^{\infty} U_j = M$. Niech $B_1:= U_1, \; B_j := U_j \backslash (U_1 \cup \cdots \cup U_{j-1}), \; j \geq 2$. Oczywiście $B_j \in \mathcal{B}(M) \subset L_M, \; j \in \mathbb{N},\;$ oraz $\bigcup_{j=1}^{\infty} B_j = M$. Teraz dla zbiory $A \in L_M$ kładziemy: $$
+		\mathcal{L}^M(A) := \sum_{j=1}^{\infty} \int_{p_j^{-1}(A \cap B_j)} J_np_j \, d\mathcal{L}^n
 	$$
 	Udowodnimy, że jest to miara. Niech $(A_k)_{k=1}^{\infty}$ będzie ciągiem parami rozłącznych zbiorów mierzalnych. Wtedy: 
 	$$
 		\mathcal{L}^M(\bigcup_{k=1}^{\infty} A_k) 
-		= \sum^{\infty}_{j=1} \int_{p_j^{-1}((\bigcup_{k=1} A_k) \cap B_j)} J_dp_j \, d\mathcal{L}^d
-		= \sum_{j=1}^{\infty} \sum_{k=1}^{\infty} \int_{p_j^{-1}(A_k \cap B_j)} J_dp_j \, d \mathcal{L}^d
+		= \sum^{\infty}_{j=1} \int_{p_j^{-1}((\bigcup_{k=1} A_k) \cap B_j)} J_np_j \, d\mathcal{L}^n
+		= \sum_{j=1}^{\infty} \sum_{k=1}^{\infty} \int_{p_j^{-1}(A_k \cap B_j)} J_np_j \, d \mathcal{L}^n
 	$$
 	$$
-		= \sum_{k=1}^{\infty} \sum_{j=1}^{\infty} \int_{p_j^{-1}(A_k \cap B_j)} J_dp_j \, d \mathcal{L}^d
+		= \sum_{k=1}^{\infty} \sum_{j=1}^{\infty} \int_{p_j^{-1}(A_k \cap B_j)} J_np_j \, d \mathcal{L}^n
 		= \sum_{k=1}^{\infty} \mathcal{L}^M(A_k)
 	$$
 	Teraz musimy pokazać, że zachodzi równość z tego twierdzenia. Ustalmy lokalną parametryzację $p: P \rightarrow U$  i niech $\phi_j := p^{-1} \circ p_j:p^{-1}_j(U \cap U_j) \rightarrow p^{-1}(U \cap U_j), \; \psi_j := \phi_j^{-1}, \; j \in \mathbb{N}$ . Wtedy dla $A \in L_M$ takiego, że $A \subset U$, korzystając z twierdzenia o zmianie zmiennych mamy: $$
-		\int_{p^{-1}(A)} J_dp \, d \mathcal{L}^d 
-		= \sum_{j=1}^{\infty} \int_{p^{-1}(A \cap B_j)} J_dp \, d \mathcal{L}^d
-		= \sum_{j=1}^{\infty} \int_{\phi_j(p_j^{-1}(A \cap B_j \cap U))} J_d(p_j \circ \psi_j) \, d \mathcal{L}^d
+		\int_{p^{-1}(A)} J_np \, d \mathcal{L}^n
+		= \sum_{j=1}^{\infty} \int_{p^{-1}(A \cap B_j)} J_np \, d \mathcal{L}^n
+		= \sum_{j=1}^{\infty} \int_{\phi_j(p_j^{-1}(A \cap B_j \cap U))} J_n(p_j \circ \psi_j) \, d \mathcal{L}^n
 	$$
 	$$
-		= \sum_{j=1}^{\infty} \int_{p_j^{-1}(A \cap B_j)} (J_d(p_j \circ \psi_j) \circ \phi_j) |\phi_j'| \, d \mathcal{L}^d
-		= \sum_{j=1}^{\infty} \int_{p_j^{-1}(A \cap B_j)} J_dp_j \, d \mathcal{L}^d = \mathcal{L}^M(A)
+		= \sum_{j=1}^{\infty} \int_{p_j^{-1}(A \cap B_j)} (J_n(p_j \circ \psi_j) \circ \phi_j) |\phi_j'| \, d \mathcal{L}^n
+		= \sum_{j=1}^{\infty} \int_{p_j^{-1}(A \cap B_j)} J_np_j \, d \mathcal{L}^n = \mathcal{L}^M(A)
 	$$
-	NIech $\mu: L_M \rightarrow [0, +\infty]$ będzie inną miarą spełniającą tą równość. Wtedy dla $A \in L_M$ mamy: $$
-		\mu(A) = \sum_{j=1}^{\infty} \mu(A \cap B_j) = \sum_{j=1}^{\infty} \int_{p_j^{-1}(A \cap B_j)} J_dp_j \, d \mathcal{L}^d = \mathcal{L}^m(A)
+	Niech $\mu: L_M \rightarrow [0, +\infty]$ będzie inną miarą spełniającą tą równość. Wtedy dla $A \in L_M$ mamy: $$
+		\mu(A) = \sum_{j=1}^{\infty} \mu(A \cap B_j) = \sum_{j=1}^{\infty} \int_{p_j^{-1}(A \cap B_j)} J_np_j \, d \mathcal{L}^n = \mathcal{L}^M(A)
 	$$
 	Stąd wynika, że $\mathcal{L}^M$ jest jedyna.
 \end{tw}

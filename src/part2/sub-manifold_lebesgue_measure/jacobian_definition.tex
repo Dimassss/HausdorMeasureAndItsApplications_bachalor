@@ -1,9 +1,9 @@
 \begin{defi}[Jakobian odwzorowania różniczkowalnego]
-	Dla odwozorowania $f = (f_1, ..., f_n): \Omega \rightarrow \mathbb{R}^n$, gdzie $\Omega$ jest zbiorem otwartym w $\mathbb{R}^d$, $1 \leq d \leq n$, niech $J_df: \Omega \rightarrow \mathbb{R}_+$ $$ 
-	J_df := \left( \sum_{I \in \bigwedge_d^n} \left| det \left[ \frac{\partial f_{i_j}}{\partial t_k} \right]_{j,k=1,\dots,d} \right|^2 \right)^{1/2}
+	Dla odwozorowania $f = (f_1, ..., f_m): \Omega \rightarrow \mathbb{R}^m$, gdzie $\Omega$ jest zbiorem otwartym w $\mathbb{R}^n$, $1 \leq n \leq m$, niech $J_nf: \Omega \rightarrow \mathbb{R}_+$ $$ 
+	J_nf := \left( \sum_{I \in \bigwedge_n^m} \left| det \left[ \frac{\partial f_{i_j}}{\partial t_k} \right]_{j,k=1,\dots,n} \right|^2 \right)^{1/2}
 	$$
 	$$
-		\bigwedge_d^n := \{ (i_1, \cdots, i_d): 1 \leq i_1 < \cdots < i_d \leq n \}
+		\bigwedge_n^m := \{ (i_1, \cdots, i_n): 1 \leq i_1 < \cdots < i_n \leq m \}
 	$$
-	Odnotujmy równieź, że $J_df(t_0) > 0 \Leftrightarrow rank(f'(t_o))  =d$.
+	Odnotujmy równieź, że $J_nf(t_0) > 0 \Leftrightarrow rank(f'(t_o))  =n$.
 \end{defi}
